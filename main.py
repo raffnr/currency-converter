@@ -4,13 +4,13 @@ from currencies import list_currencies
 import requests
 
 
-# Warna
+# Color
 cor0 = "#FFFFFF"  # putih
 cor1 = "#333333"  # hitam
 cor2 = "#EB5D51"  # merah
 
 
-# Fungsi konversi
+# Convertion function
 def convert ():
     host = 'api.frankfurter.app'
     from_currency = from_curr_combobox.get()
@@ -45,7 +45,7 @@ result_frame.grid(row= 0, column=0, padx=20, pady=10)
 result = Label(result_frame, text = " ",width=16, height=2, pady=7, relief="solid", anchor=CENTER, font=('Ivy 15 bold'), bg=cor0, fg=cor1)
 result.grid(row=0, column=0)
 
-# Frame input mata uang
+# Currency input frame
 curr_input_frame = Frame(frame, bg=cor0)
 curr_input_frame.grid(row= 1, column=0, padx=20, pady=10)
 
